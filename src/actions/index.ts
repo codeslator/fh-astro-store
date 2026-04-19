@@ -1,4 +1,5 @@
 import { loginUser, logout, registerUser } from './auth';
+import { getProductBySlug, getProductsByPage } from './products';
 
 export const server = {
   // actions
@@ -7,4 +8,8 @@ export const server = {
   loginUser,
   logout,
   registerUser,
+
+  // Products
+  getProductsByPage,
+  getProductBySlug
 };
